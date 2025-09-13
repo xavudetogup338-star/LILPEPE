@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Pepe on SOL</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="star-canvas"></canvas>
+
+    <a href="#" class="site-logo">
+        <img src="/logo-CPEVDSpN.png" alt="Little Pepe Logo">
+    </a>
+
+    <div class="parallax-container">
+        <img src="background.png" alt="Space background" class="parallax-bg" data-depth="0.1">
+    </div>
+    
+    <main class="content">
+        <h1 class="glow-text">$LILPEPE on SOL</h1>
+
+        <div class="pepe-container parallax-element" data-depth="0.2">
+            <img src="pepe-astronaut.png" alt="Pepe the frog in an astronaut suit" id="pepe-img">
+        </div>
+
+        <p class="subtitle">The biggest little pepe on solana</p>
+
+        <section class="presale-container">
+            <img src="pepe-wallet.png" class="presale-pepe pepe-left" alt="Pepe with wallet">
+            <img src="pepe-stablecoins.png" class="presale-pepe pepe-right" alt="Pepe with stablecoins">
+            <div class="presale-header">
+                 <div class="round-box">
+                    ROUND <span id="round-number">12</span>
+                </div>
+                <h3>PRESALE IS LIVE!</h3>
+            </div>
+            <div class="presale-price">1 LILPEPE = $0.0015</div>
+            
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar-fill"></div>
+                <div id="progress-percent" class="progress-bar-text">89.01%</div>
+            </div>
+            <div class="presale-stats">
+                <div>
+                    <p>USD Raised</p>
+                    <span id="usd-raised">$25,475,000</span>
+                </div>
+                <div>
+                    <p>Tokens Sold</p>
+                    <span id="tokens-sold">15,750,000,000</span>
+                </div>
+            </div>
+
+            <div class="buy-interface">
+                <div class="currency-tabs">
+                    <button class="tab-button active" data-currency="SOL">SOL</button>
+                    <button class="tab-button" data-currency="USDT">USDT</button>
+                    <button class="tab-button" data-currency="USDC">USDC</button>
+                </div>
+                <div class="input-group">
+                    <label>Amount in <span id="pay-currency-label">SOL</span> you pay</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="pay-input" placeholder="0">
+                        <span id="pay-currency-symbol">SOL</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Amount of $LILPEPE you receive</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="lilpepe-output" placeholder="0" readonly>
+                        <span>LILPEPE</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="direct-transfer-button">BUY LILPEPE MANUALLY</button>
+            <button class="connect-wallet-button">Connect Wallet</button>
+        </section>
+
+        <section class="complaint-section">
+            <p class="complaint-text">If you encounter congestion on the SOL chain, you can purchase directly via wallet transfer. LILPEPE will be transferred to your wallet within 10 minutes. If you do not receive the tokens in time, please click the button below to send us the transaction hash. We will verify and send the tokens within 24 hours.</p>
+            <button class="complaint-button" id="report-tokens-button">Report Missing Tokens</button>
+        </section>
+
+        <section class="about-lilpepe">
+            <div class="about-lilpepe-content">
+                <h2>About LILPEPE</h2>
+                <p>Ready for the next BIG evolution of meme coins? Little Pepe is a super-powered Layer 2 blockchain, built for SPEED, SECURITY, and ultra-low fees... all powered by MEMES! 🐸✨</p>
+                <p>Deep in its core, $LILPEPE is the magic token that fuels the whole Little Pepe network. You're still SUPER early! Get ready to see a new golden era for meme coins, with Pepe as the one true King and Little Pepe L2 as his unstoppable kingdom!</p>
+            </div>
+            <div class="about-lilpepe-image">
+                <img src="pepe-about.png" alt="Wizard Pepe" class="about-pepe-king">
+            </div>
+        </section>
+
+        <section class="how-to-buy">
+            <h2>How to Buy</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <img src="pepe-sol.png" alt="Pepe with SOL">
+                    <h3>1. With SOL</h3>
+                    <p>Get some SOL in your wallet and swap it for $LILPEPE on Raydium. Simple as that!</p>
+                </div>
+                <div class="step-card">
+                    <img src="pepe-stablecoins.png" alt="Pepe with Stablecoins">
+                    <h3>2. With USDT/USDC</h3>
+                    <p>Bridge your stablecoins to Solana and swap for $LILPEPE. The stable way to join the mission.</p>
+                </div>
+                <div class="step-card">
+                    <img src="pepe-wallet.png" alt="Pepe with wallet">
+                    <h3>3. Direct Wallet</h3>
+                    <p>Send SOL to our contract address to receive $LILPEPE back. Double-check the address!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="roadmap">
+            <h2>Roadmap</h2>
+            <div class="marquee-bg">
+                <div class="marquee-content">
+                    <span>LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE LILPEPE </span>
+                </div>
+            </div>
+            <div class="roadmap-items">
+                <div class="roadmap-item" id="roadmap-pregnancy">
+                    <div class="roadmap-text">
+                        <h3>1. PREGNANCY</h3>
+                        <ul>
+                            <li>📅 “Cooking in the cryptowomb…”</li>
+                            <li>👩‍🍼 Mumma Pepe got a baby on the way!</li>
+                            <li>🚀 Launch Presale Incoming</li>
+                            <li>🤝 Big Name Partnerships</li>
+                            <li>💬 Community Hype = Max Vibes</li>
+                            <li>📢 "Wen birth?"</li>
+                        </ul>
+                    </div>
+                    <img src="pepe-pregnancy.png" alt="Pregnant Pepe" class="roadmap-pepe">
+                </div>
+                <div class="roadmap-item" id="roadmap-birth">
+                    <div class="roadmap-text">
+                        <h3>2. BIRTH</h3>
+                        <ul>
+                            <li>👶 “It’s a boy! And he’s moon-ready!”</li>
+                            <li>📈 Listed on Top Exchanges & Uniswap</li>
+                            <li>🔥 1 BILLION MCAP or bust</li>
+                            <li>💣 Massive Marketing Blitz</li>
+                            <li>📢 "LILPEPE GO BRRRRR"</li>
+                        </ul>
+                    </div>
+                    <img src="pepe-birth.png" alt="Baby Pepe" class="roadmap-pepe">
+                </div>
+                <div class="roadmap-item" id="roadmap-growth">
+                    <div class="roadmap-text">
+                        <h3>3. GROWTH</h3>
+                        <ul>
+                            <li>🧠 “From baby meme to blockchain beast”</li>
+                            <li>⚡️ Ultra-fast. 🛡️ Secure. 💸 Cheap.</li>
+                            <li>🧱 Layer 2 EVM — Built different</li>
+                            <li>👑 Little Pepe becomes the KING</li>
+                            <li>📈 Hits TOP 100 CMC</li>
+                            <li>📢 "All hail the LILPEPE chain!"</li>
+                        </ul>
+                    </div>
+                    <img src="pepe-growth.png" alt="King Pepe" class="roadmap-pepe">
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>WHAT IS LITTLE PEPE (LILPEPE)?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <img src="pepe-about.png" alt="Wizard Pepe" class="faq-pepe">
+                        <p>Little Pepe is a Layer 2 blockchain built for speed, security, and ultra-low fees, all wrapped in the power of memes. LILPEPE is the ERC-20 token that fuels the entire Little Pepe ecosystem.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>HOW CAN I BUY LILPEPE?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <img src="pepe-wallet.png" alt="Pepe with wallet" class="faq-pepe">
+                        <p>LILPEPE is currently in its presale phase and can only be purchased via the official website: LittlePepe.com | Caution: Do not attempt to buy LILPEPE from Uniswap, PancakeSwap, Raydium, or any other platform. These are not official listings and may be scams.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>HOW CAN I CONTACT THE LITTLE PEPE TEAM?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <img src="pepe-astronaut.png" alt="Astronaut Pepe" class="faq-pepe">
+                        <p>You can reach the Little Pepe team through Contact Form: littlepepe.com/contact-us or via Email: support@littlepepe.com</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>HOW CAN I CLAIM MY TOKENS?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <img src="pepe-growth.png" alt="King Pepe" class="faq-pepe">
+                        <p>$LILPEPE tokens will be claimable once all presale stages are sold out, in accordance with the vesting schedule. Claiming and vesting information will be provided via the official website and communication channels.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>HOW CAN I CHECK THE AMOUNT OF TOKENS I BOUGHT?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <img src="pepe-stablecoins.png" alt="Pepe with stablecoins" class="faq-pepe">
+                        <p>You can check the amount of tokens you own on Dashboard.littlepepe.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="buy-button" id="buy-on-raydium-button">Buy $LILPEPE NOW</a>
+
+        <div class="socials">
+            <a href="https://x.com/littlepepetoken" target="_blank"><img src="twitter-icon.svg" alt="Twitter"></a>
+            <a href="https://t.me/littlepepetoken" target="_blank"><img src="telegram-icon.svg" alt="Telegram"></a>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-image-container">
+                 <img src="/footpepe-DMmKo7m8.png" alt="Baby Pepe with toys" class="footer-bg-image">
+            </div>
+            <nav class="footer-links">
+                <a href="https://littlepepe.com/little-pepe-whitepaper.pdf" target="_blank" class="toy-block whitepaper">Magic<br>Scroll</a>
+                <a href="https://littlepepe.com/how-to-buy/" target="_blank" class="toy-block how-to-buy">Get<br>Yours!</a>
+                <a href="https://littlepepe.com/777k-giveaway/" target="_blank" class="toy-block giveaway">Win<br>Big!</a>
+                <a href="https://littlepepe.com/terms/" target="_blank" class="toy-block terms">The<br>Rules</a>
+                <a href="https://littlepepe.com/privacy/" target="_blank" class="toy-block privacy">Our<br>Secrets</a>
+                <a href="https://littlepepe.com/cookies/" target="_blank" class="toy-block cookies">Yummy<br>Cookies</a>
+            </nav>
+            <p class="copyright">© 2025 LILPEPE all rights reserved.</p>
+        </footer>
+    </main>
+
+    <div id="buy-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <img src="pepe-wallet.png" alt="Pepe with wallet" class="modal-pepe">
+            <button class="modal-close-button">&times;</button>
+            <h2>Manual Purchase</h2>
+            <p>To complete your purchase, please send SOL, USDT, or USDC directly to the following address on the Solana network:</p>
+            <div class="address-box-modal">
+                <span id="modal-token-address">MUfLyNnMvpfTk9VoGFtYwwpM4uovFVAApjph17Lsshj</span>
+                <button id="modal-copy-button" title="Copy Address">
+                    <img src="copy-icon.svg" alt="Copy">
+                </button>
+            </div>
+            <p class="confirmation-message">Your $LILPEPE tokens will be sent to your wallet within 10 minutes of your transaction being confirmed.</p>
+        </div>
+    </div>
+
+    <div id="complaint-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close-button">&times;</button>
+            <h2>Report Missing Tokens</h2>
+            <p>Please enter your transaction hash (TxID) below. We will investigate and get back to you.</p>
+            <form id="complaint-form">
+                <div class="input-group complaint-input-group">
+                    <label for="tx-hash-input">Transaction Hash (TxID)</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="tx-hash-input" placeholder="Enter your transaction hash" required>
+                    </div>
+                </div>
+                <button type="submit" class="complaint-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmation-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close-button">&times;</button>
+            <h2>Submission Received</h2>
+            <p>We will verify your purchase within 24 hours. Please don't worry, we will send the tokens to your wallet in a timely manner.</p>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "@solana/web3.js": "https://unpkg.com/@solana/web3.js@latest/lib/index.browser.esm.js"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
